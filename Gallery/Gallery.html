@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Gallery.css">
+    <script src="Gallery.js" defer></script>
+</head>
+
+<body>
+    <h1 id="h1">Image Gallery</h1>
+    <div class="Gallery" id="mainGallery">
+        <div class="img-container">
+            <a href="javascript:void(0);" onclick="showFoodSection()">
+                <img alt="Food"
+                    src="https://www.eatingwell.com/thmb/m5xUzIOmhWSoXZnY-oZcO9SdArQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/article_291139_the-top-10-healthiest-foods-for-kids_-02-4b745e57928c4786a61b47d8ba920058.jpg"
+                    id="Food">
+                <div class="overlay">Food</div>
+            </a>
+        </div>
+        <div class="img-container">
+            <a href="javascript:void(0);" onclick="showEducationSection()">
+                <img alt="Education"
+                    src="https://w7.pngwing.com/pngs/275/188/png-transparent-education-school-icon-children-education-infographic-child-text-thumbnail.png"
+                    id="Education">
+                <div class="overlay">Education</div>
+            </a>
+        </div>
+        <div class="img-container">
+            <a href="javascript:void(0);" onclick="showNatureSection()">
+                <img alt="Nature"
+                    src="https://w0.peakpx.com/wallpaper/189/465/HD-wallpaper-green-forest-and-iphone-nature-green-nature-beautiful-nature-nature-green-tree.jpg"
+                    id="Nature">
+                <div class="overlay">Nature</div>
+            </a>
+        </div>
+        <div class="img-container">
+            <a href="javascript:void(0);" onclick="showTravelSection()">
+                <img alt="Travel"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmSpF-ATKbyHD9niu7UfZj-5C1Job4b5HE5Q&s"
+                    id="Travel">
+                <div class="overlay">Travel</div>
+            </a>
+        </div>
+        <div class="img-container">
+            <a href="javascript:void(0);" onclick="showTechnologySection()">
+                <img alt="Technology"
+                    src="https://bondartech.com/wp-content/uploads/modernTechnology_620977929_400-1.jpg"
+                    id="Technology">
+                <div class="overlay">Technology</div>
+            </a>
+        </div>
+        <div class="img-container">
+            <a href="javascript:void(0);" onclick="showArtSection()">
+                <img alt="Art"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShAWvzpT9PeGcRU51uKEKlcNwkHR9CfmwIrA&s"
+                    id="Art">
+                <div class="overlay">Art</div>
+            </a>
+        </div>
+        <div class="img-container">
+            <a href="javascript:void(0);" onclick="showSportSection()">
+                <img alt="Sports"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzm7bhTk5WAhjntJ8yt_zkSWqXJ4UN2cTe0A&s"
+                    id="Sports">
+                <div class="overlay">Sports</div>
+            </a>
+        </div>
+        <div class="img-container">
+            <a href="javascript:void(0);" onclick="showfashionSection()">
+                <img alt="Fashion"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnHxjIxlMhSF8tSaqtHLX8RctGQ2qmfJXmhQ&s"
+                    id="Fashion">
+                <div class="overlay">Fashion</div>
+            </a>
+        </div>
+        <div class="img-container">
+            <a href="javascript:void(0);" onclick="showArchitectureSection()">
+                <img alt="Architecture"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvzW27KljOLaKWXKeHq03ioXhRMBknXUaVwA&s"
+                    id="Architecture">
+                <div class="overlay">Architecture</div>
+            </a>
+        </div>
+        <div class="img-container">
+            <a href="javascript:void(0);" onclick="showMusicSection()">
+                <img alt="Music" src="https://e.snmc.io/i/300/s/77e9277363221a0d508c0fb46d6ad083/9805917" id="Music">
+                <div class="overlay">Music</div>
+            </a>
+        </div>
+        <div class="img-container">
+            <a href="javascript:void(0);" onclick="showSpaceSection()">
+                <img alt="Space"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ82eWtqMHX0X9Cfqiqp6ipe6qNSqybUY-AFw&s"
+                    id="Space">
+                <div class="overlay">Space</div>
+            </a>
+        </div>
+        <div class="img-container">
+            <a href="javascript:void(0);" onclick="showHistorySection()">
+                <img alt="History"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHspy68zmynkLlzUL9hUjYG7PM9Lf-_Cpr8Q&s"
+                    id="History">
+                <div class="overlay">History</div>
+            </a>
+        </div>
+    </div>
+    <div id="foodSection" style="display: none;">
+
+        <img onclick="goBack()" alt="Back" src="backButton.png" width="50" height="50">
+
+
+        <div class="row">
+            <div class="column">
+                <a
+                    href="https://images.squarespace-cdn.com/content/v1/55ef2d60e4b0659225f4aa25/1536338515466-ACQA6E8VN7UY3AILB2EN/foods_800.png">
+                    <img alt="food1" src="Foods\food1.png" style="width:100%">
+                </a>
+                <a
+                    href="https://w7.pngwing.com/pngs/327/570/png-transparent-eating-health-diet-food-fat-health-natural-foods-food-recipe-thumbnail.png">
+                    <img alt="food2" src="Foods/food2.png" style="width:100%">
+                </a>
+                <a
+                    href="https://cookingchew.com/wp-content/uploads/2021/06/foods-that-start-with-L-CO1020-Pin-4.jpg.webp">
+                    <img alt="food3" src="Foods/food3.jpg.webp" style="width:100%">
+                </a>
+                <a
+                    href="https://img.pikbest.com/wp/202408/assorted-assortment-of-various-fast-food-items-displayed-on-a-textured-gray-table_9911466.jpg!w700wp">
+                    <img alt="food4" src="Foods/food4.jpg!w700wp" style="width:100%"></a>
+                <a
+                    href="https://quizizz.com/media/resource/gs/quizizz-media/quizzes/5c620723-529b-4426-a78d-7b784cf0e7c4">
+                    <img alt="food5" src="Foods/food5.png" style="width:100%"></a>
+                <a href="https://miro.medium.com/v2/resize:fit:1400/0*oTfm1pTXLxitHHFy.jpg">
+                    <img alt="food6" src="Foods/food6.jpg" style="width:100%"></a>
+                <a
+                    href="https://images.squarespace-cdn.com/content/v1/5eecc807ed0b34634531b2eb/1645802422007-G7SB4ZC8NVZBZBEUZRU8/FOIC_NZICBLOG1.jpg">
+                    <img alt="food7" src="Foods/food7.jpg" style="width:100%"></a>
+            </div>
+            <div class="column">
+                <a
+                    href="https://orsimages.unileversolutions.com/ORS_Images/Knorr_en-LK/Chicken-Kottu_43_1.1.50_326X580.Jpeg">
+                    <img alt="food8" src="Foods/food8.jpg" style="width:100%"></a>
+                <a
+                    href="https://fullofplants.com/wp-content/uploads/2020/05/sweet-and-sour-spicy-thai-fried-rice-easy-vegan-meal-with-vegetables-thumb-500x500.jpg">
+                    <img alt="food9" src="Foods/food9.jpg" style="width:100%"></a>
+                <a href="https://i.pinimg.com/736x/32/a5/e0/32a5e0c9c276f20a46674a3364ccbd1f.jpg">
+                    <img alt="food10" src="Foods/food10.jpg" style="width:100%"></a>
+                <a href="https://www.yummytummyaarthi.com/wp-content/uploads/2022/11/red-sauce-pasta-1-500x500.jpg">
+                    <img alt="food11" src="Foods/food11.jpg" style="width:100%"></a>
+                <a
+                    href="https://www.thespruceeats.com/thmb/2GoDt7juuaU7lxtQDq-_IjEr6t8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/SES-our-favorite-simple-green-salad-recipe-7370448-hero-01-4ca9788a0a3c4d53b70f1d07f8382b7f.jpg">
+                    <img alt="food12" src="Foods/food12.jpg" style="width:100%"></a>
+                <a
+                    href="https://insanelygoodrecipes.com/wp-content/uploads/2021/10/Delicious-Fruit-Juices-Orange-Kiwi-and-Strawberry.jpg">
+                    <img alt="food13" src="Foods/food13.jpg" style="width:100%"></a>
+            </div>
+            <div class="column">
+                <a
+                    href="https://content.health.harvard.edu/wp-content/uploads/2023/04/b599a20a-a453-425a-9d2f-fa2ff8ba2776.jpg">
+                    <img alt="food14" src="Foods/food14.jpg" style="width:100%">
+                </a>
+                <a
+                    href="https://i0.wp.com/www.lavenderandlovage.com/wp-content/uploads/2016/05/Sri-Lankan-Egg-Hoppers-for-Breakfast.jpg?fit=1200%2C901&ssl=1">
+                    <img alt="food15" src="Foods/food15.webp" style="width:100%"></a>
+                <a href="https://greenthatlife.com/wp-content/uploads/2020/03/IMG_0512-800x533.jpeg">
+                    <img alt="food16" src="Foods/food16.jpeg" style="width:100%"></a>
+                <a
+                    href="https://images.immediate.co.uk/production/volatile/sites/30/2014/01/Top-10-foods-to-try-in-Japan-9763a03.jpg">
+                    <img alt="food17" src="Foods/food17.jpg" style="width:100%"></a>
+                <a
+                    href="https://hips.hearstapps.com/hmg-prod/images/finger-foods-beef-empanadas-1671735272.jpeg?crop=1.00xw:1.00xh;0,0&resize=1200:*">
+                    <img alt="food18" src="Foods/food18.avif" style="width:100%"></a>
+                <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgWZlNrD_GFn72Mu8uRvVgKNbERM9yKaFZNQ&s">
+                    <img alt="food19" src="Foods/food19.jpg" style="width:100%"></a>
+                <a href="https://media.cnn.com/api/v1/images/stellar/prod/170302153529-garlic-crab.jpg?q=w_1110,c_fill">
+                    <img alt="food20" src="Foods/food20.jpg" style="width:100%"></a>
+            </div>
+            <div class="column">
+                <a href="https://draxe.com/wp-content/uploads/2022/04/DrAxeArticle-HappyFoods_Header.jpg">
+                    <img alt="food21" src="Foods/food21.jpg" style="width:100%"></a>
+                <a href="https://media.cnn.com/api/v1/images/stellar/prod/230213145341-dry-beans-stock.jpg?c=original">
+                    <img alt="food22" src="Foods/food22.jpg" style="width:100%"></a>
+                <a
+                    href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxnlz9m8FTucAMjkSFaDpOWfU7FQdRqr-DkOdd_MFLzKnRg-NalCLjZSZd8kJ8-YsBWm4&usqp=CAU">
+                    <img alt="food23" src="Foods/food23.jpg" style="width:100%"></a>
+                <a
+                    href="https://www.datocms-assets.com/20941/1665663448-what-are-dairy-foods.png?auto=compress&fm=jpg&w=850">
+                    <img alt="food24" src="Foods/food24.jpg" style="width:100%"></a>
+                <a
+                    href="https://media1.popsugar-assets.com/files/thumbor/GhQVnhv_As5XBm_5VOK5QJBl944=/fit-in/700x1050/filters:format_auto():upscale()/2023/08/22/725/n/1922195/cdeeb18264e4e159ba33d9.37764897_easy-overnig.jpg">
+                    <img alt="food25" src="Foods/food25.jpg" style="width:100%"></a>
+                <a
+                    href="https://images.immediate.co.uk/production/volatile/sites/30/2020/08/chilli-ginger-squash-kale-quinoa-ae1d320.jpg?quality=90&resize=440,400">
+                    <img alt="food26" src="Foods/food26.jpg" style="width:100%"></a>
+            </div>
+        </div>
+
+    </div>
+    <div id="educationSection" style="display: none;">
+
+        <img onclick="goBack()" alt="Back" src="backButton.png" width="50" height="50">
+
+
+        <div class="row">
+            <div class="column">
+                <a href="https://www.voicesofyouth.org/sites/voy/files/images/2022-03/educ.jpg">
+                    <img alt="edu1" src="Edu/edu1.jpg" style="width:100%"> </a>
+                <a
+                    href="https://thumbor.forbes.com/thumbor/fit-in/900x510/https://www.forbes.com/advisor/wp-content/uploads/2023/07/teacher-in-classroom.jpeg.jpg">
+                    <img alt="edu2" src="Edu/edu2.webp" style="width:100%"> </a>
+                <a href="https://images.pexels.com/photos/301926/pexels-photo-301926.jpeg">
+                    <img alt="edu3" src="Edu/edu3.jpeg" style="width:100%"> </a>
+                <a href="https://www.allisonacademy.com/wp-content/uploads/2021/10/education-is-important.jpg">
+                    <img alt="edu4" src="Edu/edu4.jpg" style="width:100%"></a>
+                <a href="https://www.ppic.org/wp-content/uploads/2021/07/graduates-2.jpg">
+                    <img alt="edu5" src="Edu/edu5.jpg" style="width:100%"></a>
+                <a
+                    href="https://i0.wp.com/www.differencebetween.com/wp-content/uploads/2011/08/Difference-Between-School-and-Education_Education.jpg">
+                    <img alt="edu6" src="Edu/edu6.webp" style="width:100%"></a>
+                <a
+                    href="https://marvel-b1-cdn.bc0a.com/f00000000290162/images.ctfassets.net/2htm8llflwdx/6LK9MCbEafyPhE3YB5HLW0/c0fe08b894d0cff8a6838f9172d1a61c/Graduation_StudentsGroup_Smiling_Outdoor_GettyImages-907837926.jpg?fit=thumb">
+                    <img alt="edu7" src="Edu/edu7.webp" style="width:100%"></a>
+            </div>
+            <div class="column">
+                <a
+                    href="https://media.wired.com/photos/63d1b65584464089ca2fc5fb/master/pass/ChatGPT-Is-Coming-To-Classrooms-Business-1298396060.jpg">
+                    <img alt="edu8" src="Edu/edu8.webp" style="width:100%"></a>
+                <a href="https://modelteaching.com/wp-content/uploads/2019/04/Classroom-Procedures-min.jpg">
+                    <img alt="edu9" src="Edu/edu9.webp" style="width:100%"></a>
+                <a href="https://5.imimg.com/data5/DJ/PV/GLADMIN-64970456/computer-lab-class.png">
+                    <img alt="edu10" src="Edu/edu10.png" style="width:100%"></a>
+                <a
+                    href="https://www.greatschools.org/gk/wp-content/uploads/2014/03/The-school-visit-what-to-look-for-what-to-ask-1.jpg">
+                    <img alt="edu11" src="Edu/edu11.jpg" style="width:100%"></a>
+                <a
+                    href="https://www.georgetown.edu/wp-content/uploads/2019/09/20190828_FirstDay_NingLeng-_McCourt-45110optimized-2000x1500-c-default.jpg">
+                    <img alt="edu12" src="Edu/edu12.webp" style="width:100%"></a>
+                <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHjNLE8hR0el1h-7T9otGD7pF6sG1alP6XOw&s">
+                    <img alt="edu13" src="Edu/edu13.jpg" style="width:100%"></a>
+                <a href="https://img.freepik.com/premium-vector/educational-materials-school_647193-673.jpg">
+                    <img alt="edu19" src="Edu/edu19.avif" style="width:100%"></a>
+            </div>
+            <div class="column">
+                <a href="https://cdn-icons-png.flaticon.com/512/2594/2594700.png">
+                    <img alt="edu14" src="Edu/edu14.png" style="width:100%">
+                </a>
+                <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3PgUSzOGIET6idoEYoM_QsZqjQjMai1Dh4g&s">
+                    <img alt="edu15" src="Edu/edu15.jpg" style="width:100%">
+                </a>
+                <a
+                    href="https://www.the74million.org/wp-content/uploads/2023/03/curriculum-education-recovery-futureED.jpg">
+                    <img alt="edu16" src="Edu/edu16.jpg" style="width:100%">
+                </a>
+                <a
+                    href="https://png.pngtree.com/png-clipart/20231019/original/pngtree-school-materials-cartoon-book-png-image_13357970.png">
+                    <img alt="edu17" src="Edu/edu17.png" style="width:100%"></a>
+                <a
+                    href="https://www.montessori-theory.com/wp-content/uploads/2022/11/The-best-Montessori-learning-materials-for-kindergarten.jpg">
+                    <img alt="edu18" src="Edu/edu18.jpg" style="width:100%"></a>
+
+
+            </div>
+            <div class="column">
+                <a
+                    href="https://fliphtml5.com/learning-center/wp-content/uploads/2022/11/6-Best-Websites-for-Teachers-to-Create-Online-Teaching-Learning-Materials.jpg">
+                    <img alt="edu20" src="Edu/edu20.jpg" style="width:100%"></a>
+                <a
+                    href="https://static.vecteezy.com/system/resources/thumbnails/001/847/210/small_2x/back-to-school-notebook-pencils-test-tube-education-cartoon-free-vector.jpg">
+                    <img alt="edu21" src="Edu/edu21.jpg" style="width:100%"></a>
+                <a
+                    href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhkA1I87jL46fszwXjvpH_gqlXPps2KPudBh8FdyzKwVILsTlrbKWtW3IstxhrHqEpNfkZJcocT_SsBGj9kFXgVXzs4XInUiGUzbzqWR7SUOiozgvP5d0CU4p7jVH10c3LiSp2Qdnp5MOA/s414/blog+TLM+Mathematics+anilsahu77.png">
+                    <img alt="edu22" src="Edu/edu22.png" style="width:100%"></a>
+                <a
+                    href="https://www.boardworkseducation.com/wp-content/uploads/2022/08/The-Measurable-Impact-of-Interactive-Learning-Materials-1000x675.jpg">
+                    <img alt="edu23" src="Edu/edu23.jpg" style="width:100%"></a>
+                <a href="https://bonewssng.com/wp-content/uploads/2024/02/Serene-Concepts.jpg">
+                    <img alt="edu24" src="Edu/edu24.jpg" style="width:100%"></a>
+
+            </div>
+        </div>
+    </div>
+    <div id="natureSection" style="display: none;">
+
+        <img onclick="goBack()" alt="Back" src="backButton.png" width="50" height="50">
+
+
+        <div class="row">
+            <div class="column">
+                <a
+                    href="https://img.freepik.com/free-photo/wide-angle-shot-single-tree-growing-clouded-sky-during-sunset-surrounded-by-grass_181624-22807.jpg">
+                    <img alt="na1" src="Nature/Na1.avif" style="width:100%"> </a>
+                <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbpdV5eKcBMzjs7ltDev4YxvWvnNxcFk7wUg&s">
+                    <img alt="na2" src="Nature/Na2.jpg" style="width:100%"> </a>
+                <a href="https://cdn.pixabay.com/photo/2024/05/26/10/15/bird-8788491_1280.jpg">
+                    <img alt="na3" src="Nature/Na3.webp" style="width:100%"> </a>
+                <a
+                    href="https://nt.global.ssl.fastly.net/binaries/content/gallery/website/national/library/our-cause/on-the-shore-borrowdale-and-derwent-water-1518851.jpg?auto=webp&width=767&crop=16:9&dpr=2%202x">
+                    <img alt="na4" src="Nature/Na4.webp" style="width:100%"></a>
+
+            </div>
+            <div class="column">
+                <a
+                    href="https://i0.wp.com/post.healthline.com/wp-content/uploads/2019/06/Female_Woods_hike_1296x728-header-1-1296x728.jpg?w=1155&h=1528">
+                    <img alt="na5" src="Nature/Na5.webp" style="width:100%"></a>
+                <a
+                    href="https://media.istockphoto.com/id/1317323736/photo/a-view-up-into-the-trees-direction-sky.jpg?s=612x612&w=0&k=20&c=i4HYO7xhao7CkGy7Zc_8XSNX_iqG0vAwNsrH1ERmw2Q=">
+                    <img alt="na6" src="Nature/Na6.jpg" style="width:100%"></a>
+                <a href="https://static.theprint.in/wp-content/uploads/2022/07/Untitled-design-10-1.jpg">
+                    <img alt="na7" src="Nature/Na7.avif" style="width:100%"></a>
+                <a href="https://static.toiimg.com/img/91227987/Master.jpg">
+                    <img alt="na8" src="Nature/Na8.webp" style="width:100%"></a>
+
+            </div>
+            <div class="column">
+                <a
+                    href="https://iucn.org/sites/default/files/styles/what_we_do_large/public/images-themes/biodiversity-shutterstock_1477256246.jpg.webp?itok=4i9JdtFu">
+                    <img alt="na9" src="Nature/Na9.webp" style="width:100%">
+                </a>
+                <a
+                    href="https://natureconservancy-h.assetsadobe.com/is/image/content/dam/tnc/nature/en/photos/Towering-CA-Redwoods.jpg?crop=0%2C175%2C2400%2C1260&wid=1200&hei=630&scl=2.0">
+                    <img alt="na10" src="Nature/Na10.jpg" style="width:100%">
+                </a>
+                <a href="https://cloudfront-us-east-2.images.arcpublishing.com/reuters/HMKXRNMNWBNUBA57DTZ6C3DK3I.jpg">
+                    <img alt="na11" src="Nature/Na11.jpg" style="width:100%">
+                </a>
+
+            </div>
+            <div class="column">
+                <a
+                    href="https://webunwto.s3.eu-west-1.amazonaws.com/s3fs-public/2024-04/a-united-vision-for-nature-nature-positive-report-marks-new-collaborative-era-in-travel-tourism_0.jpeg">
+                    <img alt="na12" src="Nature/Na12.jpeg" style="width:100%"></a>
+                <a
+                    href="https://www.pbs.org/wnet/nature/files/2022/01/pUCjAjl-asset-mezzanine-16x9-vxANXve-512x288.jpg">
+                    <img alt="na13" src="Nature/Na13.jpg" style="width:100%"></a>
+                <a href="https://i.pinimg.com/564x/a7/b7/65/a7b765ea9c91b083004b3bf3da1120ab.jpg">
+                    <img alt="na14" src="Nature/Na14.jpg" style="width:100%"></a>
+                <a href="https://img.goodfon.com/wallpaper/big/7/3f/lion-cubs-family-nature.webp">
+                    <img alt="na15" src="Nature/Na15.webp" style="width:100%"></a>
+
+
+            </div>
+        </div>
+    </div>
+    <div id="travelSection" style="display: none;">
+
+        <img onclick="goBack()" alt="Back" src="backButton.png" width="50" height="50">
+
+
+        <div class="row">
+            <div class="column">
+                <a
+                    href="https://media.self.com/photos/5f0885ffef7a10ffa6640daa/4:3/w_5240,h_3929,c_limit/travel_plane_corona.jpeg">
+                    <img alt="travel1" src="Travel/Tra1.webp" style="width:100%"> </a>
+                <a
+                    href="https://st2.depositphotos.com/3837271/5507/i/450/depositphotos_55072853-stock-photo-time-to-travel-wooden-sign.jpg">
+                    <img alt="travel2" src="Travel/Tra2.jpg" style="width:100%"> </a>
+                <a href="https://youmatter.world/app/uploads/2019/11/travel-world.jpg">
+                    <img alt="travel3" src="Travel/Tra3.jpg" style="width:100%"> </a>
+                <a
+                    href="https://howtostartanllc.com/images/business-ideas/business-idea-images/travel-photography-business.jpg">
+                    <img alt="travel4" src="Travel/Tra4.jpg" style="width:100%"></a>
+
+            </div>
+            <div class="column">
+                <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9tmuFc0IFRuWtG5A6vvPyAlzzc2lJ8dQa4A&s">
+                    <img alt="travel5" src="Travel/Tra5.avif" style="width:100%"></a>
+                <a
+                    href="https://images.squarespace-cdn.com/content/v1/5a3bb03b4c326d76de73ddaa/1613140783562-ARLGSYE2Z1NTWD07GOHI/The+Common+Wanderer-9888.jpg">
+                    <img alt="travel6" src="Travel/Tra6.jpg" style="width:100%"></a>
+                <a href="https://www.bsr.org/images/heroes/bsr-travel-hero..jpg">
+                    <img alt="travel7" src="Travel/Tra7.jpg" style="width:100%"></a>
+                <a
+                    href="https://thumbs.dreamstime.com/b/happy-travel-woman-vacation-concept-funny-traveler-enjoy-her-trip-ready-to-adventure-happy-travel-woman-vacation-concept-118679424.jpg">
+                    <img alt="travel8" src="Travel/Tra8.webp" style="width:100%"></a>
+
+            </div>
+            <div class="column">
+                <a
+                    href="https://www.travelandleisure.com/thmb/MriQxOVvVJ1MLNgWUXbGl8L2rGk=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/TAL-Backpacker-BUDGET0323-eeaf531276694f93966baa8fbcd2730d.jpg">
+                    <img alt="travel9" src="Travel/Tra9.jpg" style="width:100%">
+                </a>
+                <a
+                    href="https://images.pexels.com/photos/586687/pexels-photo-586687.jpeg?cs=srgb&dl=pexels-david-bartus-43782-586687.jpg&fm=jpg">
+                    <img alt="travel10" src="Travel/Tra10.jpg" style="width:100%">
+                </a>
+                <a
+                    href="https://thumbor.forbes.com/thumbor/fit-in/900x510/https://www.forbes.com/advisor/wp-content/uploads/2023/07/travel-insurance-woman-on-boat.jpeg.jpg">
+                    <img alt="travel11" src="Travel/Tra11.webp" style="width:100%">
+                </a>
+
+            </div>
+            <div class="column">
+                <a
+                    href="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2a/75/a7/11/caption.jpg?w=1200&h=-1&s=1&cx=1920&cy=1080&chk=v1_ad334fbd360074787a94">
+                    <img alt="travel12" src="Travel/Tra12.jpg" style="width:100%"></a>
+                <a
+                    href="https://www.allianz.lk/products/general-insurance-products/travel-insurance/_jcr_content/root/stage/stageimage.img.82.768.jpeg/1612944438284/travel-desktop.jpeg">
+                    <img alt="travel13" src="Travel/Tra13.jpeg" style="width:100%"></a>
+                <a
+                    href="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRJEiWtyo7hLfD_tkFBZuq_qXRzHYFTUnnxMyE_MPIrSre6UCB6">
+                    <img alt="travel14" src="Travel/Tra14.webp" style="width:100%"></a>
+
+            </div>
+        </div>
+    </div>
+    <div id="technologySection" style="display: none;">
+
+        <img onclick="goBack()" alt="Back" src="backButton.png" width="50" height="50">
+
+
+        <div class="row">
+            <div class="column">
+                <a
+                    href="https://www.globalfocusmagazine.com/wp-content/uploads/2020/02/Engaging_with_technology-scaled.jpg">
+                    <img alt="tech1" src="Tech/tech1.webp" style="width:100%"> </a>
+                <a href="https://sklc-tinymce-2021.s3.amazonaws.com/comp/2023/02/222%20(1)_1676558718.png">
+                    <img alt="tech2" src="Tech/tech2.png" style="width:100%"> </a>
+                <a href="https://profiletree.com/wp-content/uploads/2023/02/technology-3.webp">
+                    <img alt="tech3" src="Tech/tech3.webp" style="width:100%"> </a>
+                <a
+                    href="https://resize.indiatvnews.com/en/resize/newbucket/1200_-/2022/03/technology-trend-freepik-1647963838.jpg">
+                    <img alt="tech4" src="Tech/tech4.jpg" style="width:100%"></a>
+
+            </div>
+            <div class="column">
+                <a href="https://www.informediate.com/wp-content/uploads/2014/10/technology.jpg">
+                    <img alt="tech5" src="Tech/tech5.jpg" style="width:100%"></a>
+                <a
+                    href="https://www.crowe.com/-/media/crowe/llp/sc10-media/insights/articles/2023/content-2000x1125/contentmktmt2300002bfy23-markets-technology-awareness--whats-next-for-tech--thought-leadershipas3639.jpg?rev=025a044aa9394515a261e9c6242045cb">
+                    <img alt="tech6" src="Tech/tech6.webp" style="width:100%"></a>
+                <a
+                    href="https://thehealthcareinsights.com/wp-content/uploads/2021/01/How-technology-facilitates-Preventive-medicine.jpg">
+                    <img alt="tech7" src="Tech/tech7.jpg" style="width:100%"></a>
+                <a href="https://thetechsstorm.com/wp-content/uploads/2024/03/computer.jpg">
+                    <img alt="tech8" src="Tech/tech8.jpg" style="width:100%"></a>
+
+            </div>
+            <div class="column">
+                <a
+                    href="https://img.freepik.com/premium-photo/artificial-intelligence-futuristic-technology-concept-robot-girl_714173-2019.jpg">
+                    <img alt="tech9" src="Tech/tech9.avif" style="width:100%">
+                </a>
+                <a
+                    href="https://cdn.arabsstock.com/uploads/images/156621/image-156621-progress-development-medical-field-use-technology-technol-thumbnail.webp">
+                    <img alt="tech10" src="Tech/tech10.webp" style="width:100%">
+                </a>
+                <a href="https://sklc-tinymce-2021.s3.amazonaws.com/comp/2022/09/1%20(4)_1662382529.png">
+                    <img alt="tech11" src="Tech/tech11.png" style="width:100%">
+                </a>
+
+            </div>
+            <div class="column">
+                <a
+                    href="https://img.freepik.com/premium-photo/futuristic-technology-concept-team-engineers-professionals-workers-heavy-industry_901408-9751.jpg">
+                    <img alt="tech12" src="Tech/tech12.avif" style="width:100%"></a>
+                <a href="https://www.mtu.edu/mechatronics/what-is/images/shutterstock-368354981-banner2400.jpg">
+                    <img alt="tech13" src="Tech/tech13.jpg" style="width:100%"></a>
+                <a
+                    href="https://media.licdn.com/dms/image/D4D12AQGLIU1rTma68A/article-cover_image-shrink_720_1280/0/1695934308583?e=2147483647&v=beta&t=_sCCy0CaO3eMdnlHMzarfFLeIPSbRzSoKRqb7fU-ohY">
+                    <img alt="tech14" src="Tech/tech14.png" style="width:100%"></a>
+                <a
+                    href="https://media.licdn.com/dms/image/C4D12AQElqiGetL0FtQ/article-cover_image-shrink_600_2000/0/1579486849863?e=2147483647&v=beta&t=7EqXYROXGdlFAPLJiqZtNJvk4acwHfWKLnjEradTnPI">
+                    <img alt="tech15" src="Tech/tech15.jpg" style="width:100%">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="artSection" style="display: none;">
+
+        <img onclick="goBack()" alt="Back" src="backButton.png" width="50" height="50">
+
+
+        <div class="row">
+            <div class="column">
+                <a href="https://cdn.britannica.com/87/2087-004-264616BB/Mona-Lisa-oil-wood-panel-Leonardo-da.jpg">
+                    <img alt="art1" src="Art/art1.webp" style="width:100%"> </a>
+                <a
+                    href="https://art.rtistiq.com/en-us/_next/image?url=https%3A%2F%2Fd28jbe41jq1wak.cloudfront.net%2FBlogsImages%2FPop_Art_Compressed_638237807745595223.jpg&w=1920&q=75">
+                    <img alt="art2" src="Art/art2.webp" style="width:100%"> </a>
+                <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScvL_EawS5bKUOPnLT8lFw_JVLDYMWamG-cw&s">
+                    <img alt="art3" src="Art/art3.jpg" style="width:100%"> </a>
+
+
+            </div>
+            <div class="column">
+                <a
+                    href="https://cdn.shopify.com/s/files/1/0625/3818/6989/files/2_5acf9bab-5dd3-4e04-b42c-d4985ccda17b.jpg?v=1676615530">
+                    <img alt="art4" src="Art/art4.webp" style="width:100%"></a>
+                <a
+                    href="https://creativegeniusacademy.ca/wp-content/uploads/2020/05/60054164_10161855083225644_2787141687263100928_o-1024x770.jpg">
+                    <img alt="art5" src="Art/art5.jpg" style="width:100%"></a>
+                <a
+                    href="https://d3hocxeqwpeppp.cloudfront.net/templates/yootheme/cache/41/Art-today-6-18-41b28df1.jpeg">
+                    <img alt="art6" src="Art/art6.jpeg" style="width:100%"></a>
+
+            </div>
+            <div class="column">
+                <a href="https://printler.com/media/photo/182969.jpg">
+                    <img alt="art7" src="Art/art7.jpg" style="width:100%">
+                </a>
+                <a href="https://miro.medium.com/v2/resize:fit:1200/1*qNC1jbAfMFAwSgxZGYr4sw.png">
+                    <img alt="art8" src="Art/art8.png" style="width:100%">
+                </a>
+                <a href="https://owanbecommunity.org/wp-content/uploads/2021/10/images-1-3.jpeg">
+                    <img alt="art9" src="Art/art9.jpeg" style="width:100%">
+                </a>
+                <a href="https://m.media-amazon.com/images/I/91zBRbSDxXL.jpg">
+                    <img alt="art10" src="Art/art10.jpg" style="width:100%">
+                </a>
+
+            </div>
+            <div class="column">
+                <a href="https://m.media-amazon.com/images/I/91w7rYJ92xL._AC_UF1000,1000_QL80_.jpg">
+                    <img alt="art11" src="Art/art11.jpg" style="width:100%"></a>
+                <a href="https://media.posterlounge.com/img/products/760000/757287/757287_poster.jpg">
+                    <img alt="art12" src="Art/art12.jpg" style="width:100%"></a>
+                <a href="https://miro.medium.com/v2/resize:fit:1200/1*Y50-Ut4Bry8xIaC5YRlbrA.jpeg">
+                    <img alt="art13" src="Art/art13.jpg" style="width:100%"></a>
+                <a
+                    href="https://media.istockphoto.com/id/163724359/photo/tattoo-portrait.jpg?s=612x612&w=0&k=20&c=gG7_YIFuBRPEKiSq-wtjFUFclKTL642bx-dGgnTL7-0=">
+                    <img alt="art14" src="Art/art14.jpg" style="width:100%">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="sportSection" style="display: none;">
+
+        <img onclick="goBack()" alt="Back" src="backButton.png" width="50" height="50">
+
+
+        <div class="row">
+            <div class="column">
+                <a href="https://promova.com/content/sport_idioms_3a57e5deed.png">
+                    <img alt="sp1" src="sports/sp1.png" style="width:100%"> </a>
+                <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStE40pWkS0kREns_mESXDh-Wm9uoXUbP0img&s">
+                    <img alt="sp2" src="sports/sp2.jpeg" style="width:100%"> </a>
+                <a
+                    href="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Sport_balls.svg/1024px-Sport_balls.svg.png">
+                    <img alt="sp3" src="sports/sp3.png" style="width:100%"> </a>
+
+
+            </div>
+            <div class="column">
+                <a href="https://pre-webunwto.s3.eu-west-1.amazonaws.com/2020-01/sport-congresse.jpg">
+                    <img alt="sp4" src="sports/sp4.jpg" style="width:100%"></a>
+                <a
+                    href="https://www.washingtonpost.com/resizer/MeGFFLJZINBpnH8JEK_HWevLJ9o=/arc-anglerfish-washpost-prod-washpost/public/7GUDLGQP3UI6VESMWNGQTO6JJA.jpg">
+                    <img alt="sp5" src="sports/sp5.webp" style="width:100%"></a>
+                <a href="https://www.oakridge.in/wp-content/uploads/2022/03/VIS_6317.jpg">
+                    <img alt="sp6" src="sports/sp6.webp" style="width:100%"></a>
+
+            </div>
+            <div class="column">
+                <a
+                    href="https://sportengland-production-files.s3.eu-west-2.amazonaws.com/s3fs-public/styles/max_width_1266px/public/2021-01/PA-55875259%20-%201266.jpg?VersionId=zVJoknym9gT3cgenq.BVR56G5XGZCzYX&itok=IdcoF3Ng">
+                    <img alt="sp7" src="sports/sp7.jpg" style="width:100%">
+                </a>
+                <a href="https://admissions.cornell.edu/sites/default/files/2022-11/Recreation%20Fitness.png">
+                    <img alt="sp8" src="sports/sp8.png" style="width:100%">
+                </a>
+                <a href="https://content.api.news/v3/images/bin/93b3378266059e2c1da7b8e2139f6057">
+                    <img alt="sp9" src="sports/sp9.webp" style="width:100%">
+                </a>
+                <a href="https://i.insider.com/5d6930bf21214c3a393f1ff4?width=700">
+                    <img alt="sp10" src="sports/sp10.webp" style="width:100%">
+                </a>
+
+            </div>
+            <div class="column">
+                <a href="https://www.uksport.gov.uk/-/media/images/bryony-pitman-gb-archery-at-tokyo.ashx">
+                    <img alt="sp11" src="sports/sp11.jpg" style="width:100%"></a>
+                <a
+                    href="https://i0.wp.com/www.splento.com/blog/wp-content/uploads/2021/07/Sports-photography.jpg?ssl=1">
+                    <img alt="sp12" src="sports/sp12.webp" style="width:100%"></a>
+                <a href="https://askthescientists.com/wp-content/uploads/2020/08/AdobeStock_162977053.jpg">
+                    <img alt="sp13" src="sports/sp13.jpg" style="width:100%"></a>
+
+            </div>
+        </div>
+    </div>
+    <div id="fashionSection" style="display: none;">
+
+        <img onclick="goBack()" alt="Back" src="backButton.png" width="50" height="50">
+
+
+        <div class="row">
+            <div class="column">
+                <a
+                    href="https://www.realsimple.com/thmb/yla86Nr8GjRXe_9IyADQ638gPrg=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/fashion-trends-GettyImages-1457816153-d2982e954afe4b42bf5587f087da90d4.jpg">
+                    <img alt="fa1" src="fashion/fashion1.jpg" style="width:100%"> </a>
+                <a
+                    href="https://cdn.tophatch.com/media/filer_public_thumbnails/filer_public/9c/25/9c25bddc-005e-4c11-8926-9f28b1d10337/emilykeller_concepts1-colorsketches.jpg__2400.0x1760.0_q85_subsampling-2.jpg">
+                    <img alt="fa2" src="fashion/fashion2.jpg" style="width:100%"> </a>
+                <a href="https://www.attitudetallyacademy.com/Blog/wp-content/uploads/2020/06/attitude.jpg">
+                    <img alt="fa3" src="fashion/fashion3.jpg" style="width:100%"> </a>
+
+
+            </div>
+            <div class="column">
+                <a href="https://cdn.britannica.com/05/149005-050-D9A6D0B3/Fashion-designer-clothing-design-paper.jpg">
+                    <img alt="fa4" src="fashion/fashion4.webp" style="width:100%"></a>
+                <a href="https://aaftonline.com/blog/wp-content/uploads/2023/02/FASHION-DESIGNER.png">
+                    <img alt="fa5" src="fashion/fashion5.png" style="width:100%"></a>
+                <a href="https://images.pond5.com/laptop-fashion-and-woman-designer-photo-221609923_iconl_nowm.jpeg">
+                    <img alt="fa6" src="fashion/fashion6.webp" style="width:100%"></a>
+
+            </div>
+            <div class="column">
+                <a
+                    href="https://cdn.britannica.com/13/149013-050-427CC930/Runway-models-Isaac-Mizrahi-collection-fashion-show-2010.jpg">
+                    <img alt="fa7" src="fashion/fashion7.webp" style="width:100%">
+                </a>
+                <a
+                    href="https://i0.wp.com/www.exronmusic.com/wp-content/uploads/2024/04/Screenshot-2024-04-08-at-1.48.19%E2%80%AFPM.png?resize=796%2C334&ssl=1">
+                    <img alt="fa8" src="fashion/fashion8.webp" style="width:100%">
+                </a>
+                <a
+                    href="https://www.universityoffashion.com/blog/wp-content/uploads/2019/11/Louis-Vuittons-spring-2020-show.-vogue.jpg">
+                    <img alt="fa9" src="fashion/fashion9.jpg" style="width:100%">
+                </a>
+                <a
+                    href="https://www.shutterstock.com/image-photo/set-playful-multiethnic-kids-stylish-600nw-1674488743.jpg">
+                    <img alt="fa10" src="fashion/fashion10.webp" style="width:100%">
+                </a>
+
+            </div>
+            <div class="column">
+                <a
+                    href="https://i.ytimg.com/vi/RetI2HvfYIY/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDzrbVhMCO-8DZY25WwelzXqDFMGg">
+                    <img alt="fa11" src="fashion/fashion11.jpg" style="width:100%"></a>
+                <a
+                    href="https://static.vecteezy.com/system/resources/previews/027/110/402/non_2x/fashion-model-kids-free-photo.jpg">
+                    <img alt="fa12" src="fashion/fashion12.jpg" style="width:100%"></a>
+                <a
+                    href="https://www.bellabelleshoes.com/cdn/shop/articles/BertaBridal2022APRNYC-136_1.jpg?v=1649873780">
+                    <img alt="fa13" src="fashion/fashion13.jpg" style="width:100%"></a>
+
+            </div>
+        </div>
+    </div>
+    <div id="architectureSection" style="display: none;">
+
+        <img onclick="goBack()" alt="Back" src="backButton.png" width="50" height="50">
+
+
+        <div class="row">
+            <div class="column">
+                <a
+                    href="https://thearchitectsdiary.com/wp-content/uploads/2023/02/Arch2O-architectural-sketching-10-architecture-sketching-tips-1.jpg">
+                    <img alt="arci1" src="arcitecture/arci1.jpg" style="width:100%"> </a>
+                <a
+                    href="https://cdn.britannica.com/25/249825-138-1C8028AD/Jeanne-Gang-architect-Studio-Gang.jpg?w=800&h=450&c=crop">
+                    <img alt="arci2" src="arcitecture/arci2.webp" style="width:100%"> </a>
+                <a
+                    href="https://www.timeshighereducation.com/student/sites/default/files/styles/default/public/why-study-architecture_0.jpg?itok=cgMcrCfY">
+                    <img alt="arci3" src="arcitecture/arci3.jpg" style="width:100%"> </a>
+
+
+            </div>
+            <div class="column">
+                <a
+                    href="https://i0.wp.com/www.lifeofanarchitect.com/wp-content/uploads/2021/10/What-is-Architecture-Drafted-View.jpg?ssl=1">
+                    <img alt="arci4" src="arcitecture/arci4.webp" style="width:100%"></a>
+                <a
+                    href="https://api.gharpedia.com/wp-content/uploads/2019/02/Heydar-Aliyev-Cultural-Centre-by-Zaha-Hadid-01-0101070001.jpg">
+                    <img alt="arci5" src="arcitecture/arci5.jpg" style="width:100%"></a>
+                <a
+                    href="https://preview.redd.it/gruurxjxlui61.jpg?width=640&crop=smart&auto=webp&s=8f8006539b0b6b7b7b407d240662b3c818eb9530">
+                    <img alt="arci9" src="arcitecture/arci9.webp" style="width:100%">
+                </a>
+
+            </div>
+            <div class="column">
+                <a
+                    href="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Colosseo_2020.jpg/321px-Colosseo_2020.jpg">
+                    <img alt="arci7" src="arcitecture/arci7.jpg" style="width:100%">
+                </a>
+                <a href="https://amazingarchitecture.com/storage/1892/old_building_in_london.jpg">
+                    <img alt="arci8" src="arcitecture/arci8.jpg" style="width:100%">
+                </a>
+
+                <a href="https://the-bac.edu/Images/Departments/Architecture/BArch/b_arch_hero.jpg">
+                    <img alt="arci6" src="arcitecture/arci6.jpg" style="width:100%"></a>
+                <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQR8l43io0gOgDXkyz7ESD9j021nmq-FAIGGw&s">
+                    <img alt="arci12" src="arcitecture/archi12.jpg" style="width:100%"></a>
+
+            </div>
+            <div class="column">
+                <a
+                    href="https://cdn.britannica.com/02/210202-050-D644C84B/Horyu-ji-Temple-Ikaruga-Nara-Japan-Buddhism.jpg">
+                    <img alt="arci10" src="arcitecture/arci10.webp" style="width:100%"></a>
+                <a
+                    href="https://www.homedit.com/wp-content/uploads/tallest-building-world/famous-buildings/The-Leaning-Tower-%E2%80%93-Pisa-Italy.jpg">
+                    <img alt="arci11" src="arcitecture/arci11.jpg" style="width:100%"></a>
+
+
+            </div>
+        </div>
+    </div>
+    <div id="musicSection" style="display: none;">
+
+        <img onclick="goBack()" alt="Back" src="backButton.png" width="50" height="50">
+
+
+        <div class="row">
+            <div class="column">
+                <a
+                    href="https://crk.umn.edu/sites/crk.umn.edu/files/styles/crop_banner/public/2021-12/music-hero.jpg?itok=3PYfXFvO">
+                    <img alt="music1" src="Music/m1.jpg" style="width:100%"> </a>
+                <a href="https://www.shyamh.com/images/blog/music.jpg">
+                    <img alt="music2" src="Music/m2.jpg" style="width:100%"> </a>
+                <a href="https://variety.com/wp-content/uploads/2022/07/Music-Streaming-Wars.jpg?w=1000&h=667&crop=1">
+                    <img alt="music3" src="Music/m3.webp" style="width:100%"> </a>
+
+
+            </div>
+            <div class="column">
+                <a href="https://cdn.firstcry.com/education/2022/05/15171057/447165223.jpg">
+                    <img alt="music4" src="Music/m4.jpg" style="width:100%"></a>
+                <a href="https://irp.cdn-website.com/e00ccc9d/dms3rep/multi/Laptop-and-Sheet-Music-f9a77e34.jpg">
+                    <img alt="music5" src="Music/m5.jpg" style="width:100%"></a>
+                <a
+                    href="https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2012/03/where-to-watch-music-videos-high-definition-featured.jpg">
+                    <img alt="music6" src="Music/m6.avif" style="width:100%">
+                </a>
+
+            </div>
+            <div class="column">
+                <a href="https://www.ncw.co.uk/wp-content/uploads/2020/06/Music-Club.jpg">
+                    <img alt="music7" src="Music/m7.jpg" style="width:100%">
+                </a>
+                <a
+                    href="https://storage.googleapis.com/pr-newsroom-wp/1/2023/09/Opt-3a-Ensemble-with-highlightoption2-1440x1440.jpg">
+                    <img alt="music8" src="Music/m8.jpg" style="width:100%">
+                </a>
+
+                <a href="https://cms-tc.pbskids.org/parents/articles/Whats-the-Right-Age-to-Begin-Music-Lessons.jpg">
+                    <img alt="music10" src="Music/m10.jpg" style="width:100%"></a>
+
+            </div>
+            <div class="column">
+                <a href="https://www.becomeadj.co.uk/wp-content/uploads/2021/01/PXL_20210121_133302560-scaled.jpg.webp">
+                    <img alt="music11" src="Music/m11.webp" style="width:100%"></a>
+                <a href="https://www.psychiatry.org/getmedia/da712485-3c55-455a-a94a-bbe284dda5a2/man-and-music.jpg">
+                    <img alt="music12" src="Music/m12.jpg" style="width:100%"></a>
+
+                <a href="https://sae.edu.au/wp-content/uploads/2022/08/audio-music-LP_HERO-mobile-760x582.jpg">
+                    <img alt="music9" src="Music/m9.jpg" style="width:100%"></a>
+
+            </div>
+        </div>
+    </div>
+    <div id="spaceSection" style="display: none;">
+
+        <img onclick="goBack()" alt="Back" src="backButton.png" width="50" height="50">
+
+
+        <div class="row">
+            <div class="column">
+                <a href="https://cdn.ttgtmedia.com/rms/onlineImages/solar_system_02_mobile.jpg">
+                    <img alt="space1" src="space/space1.jpg" style="width:100%"> </a>
+                <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcbkoba9WfiQcyrwTgxIH07LU1KKCfA2G7xA&s">
+                    <img alt="space2" src="space/space2.jpg" style="width:100%"> </a>
+                <a href="https://www.awarenessdays.com/wp-content/uploads/2022/10/iStock-1131418344-1.jpg">
+                    <img alt="space3" src="space/space3.jpg" style="width:100%"> </a>
+
+                <a href="https://ichef.bbci.co.uk/images/ic/480xn/p0bfsdk6.jpg">
+                    <img alt="space6" src="space/space6.jpg" style="width:100%">
+                </a>
+
+            </div>
+            <div class="column">
+                <a
+                    href="https://cdn.britannica.com/06/72006-050-5EF22ECB/Michael-Lopez-Alegria-space-module-station-assembly-International-October-2000.jpg">
+                    <img alt="space4" src="space/space4.webp" style="width:100%"></a>
+                <a href="https://d.newsweek.com/en/full/2351996/space-health.jpg">
+                    <img alt="space5" src="space/space5.jpg" style="width:100%"></a>
+
+
+            </div>
+            <div class="column">
+                <a href="https://ichef.bbci.co.uk/images/ic/1920xn/p0jhkf2c.jpg">
+                    <img alt="space7" src="space/space7.jpg" style="width:100%">
+                </a>
+                <a href="https://t3.ftcdn.net/jpg/05/58/61/32/360_F_558613274_Z1zbjnHZKjpnTvvsjfZzYXk2TIeUl54a.jpg">
+                    <img alt="space8" src="space/space8.jpg" style="width:100%">
+                </a>
+
+                <a
+                    href="https://images.ctfassets.net/mrbo2ykgx5lt/40413/50de85e244702528a7d39eebd9e7469c/main-image-blog.png?&w=912&fm=webp&q=80">
+                    <img alt="space9" src="space/space9.webp" style="width:100%"></a>
+
+            </div>
+            <div class="column">
+                <a
+                    href="https://img.freepik.com/premium-photo/abstract-space-endless-nebula-galaxy-background-star-system-gravity-astronomy-black-hole-high-resolution-art-generative-artificial-intelligence_819901-93.jpg">
+                    <img alt="space10" src="space/space10.avif" style="width:100%"></a>
+                <a href="https://noirlab.edu/public/media/archives/images/screen/noao0107a.jpg">
+                    <img alt="space11" src="space/space11.jpg" style="width:100%"></a>
+
+                <a href="https://c02.purpledshub.com/uploads/sites/41/2023/07/The-Sun-thumbnail-c8d6c09.jpg?w=1200">
+                    <img alt="space12" src="space/space12.jpg" style="width:100%"></a>
+
+            </div>
+        </div>
+    </div>
+    <div id="historySection" style="display: none;">
+
+        <img onclick="goBack()" alt="Back" src="backButton.png" width="50" height="50">
+
+
+        <div class="row">
+            <div class="column">
+                <a href="https://i.natgeofe.com/k/1bc6572d-cb59-48b4-8d95-3e3a0f3c1b8a/history-og_16x9.jpg?w=1200">
+                    <img alt="his1" src="history/his1.avif" style="width:100%"> </a>
+                <a
+                    href="https://chronicle.brightspotcdn.com/dims4/default/efdd3b8/2147483647/strip/true/crop/6171x3471+617+0/resize/1200x675!/quality/90/?url=http%3A%2F%2Fchronicle-brightspot.s3.us-east-1.amazonaws.com%2Fa6%2Fe1%2Ff6b4c10b4b0993ef35eaebec7c25%2Fscott-0824-wikipedia.jpg">
+                    <img alt="his2" src="history/his2.jpg" style="width:100%"> </a>
+                <a
+                    href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsuL2fgXvBNKPtXQncLcA-mE0V1DbPxaACYVckODksXuPnOAjqKYqu4duNlwk2mUPRjNU&usqp=CAU">
+                    <img alt="his3" src="history/his3.jpg" style="width:100%"> </a>
+
+
+
+            </div>
+            <div class="column">
+                <a
+                    href="https://brocku.ca/humanities/history/wp-content/uploads/sites/138/carousel2-1800x1100.jpg?x25593">
+                    <img alt="his5" src="history/his5.jpg" style="width:100%"></a>
+                <a
+                    href="https://www.americanhistory.amdigital.co.uk/content/themes/sites/AmericanHistory/images/homepage/slideshow/Carousel2.jpg">
+                    <img alt="his6" src="history/his6.jpg" style="width:100%"></a>
+                <a
+                    href="https://images.immediate.co.uk/production/volatile/sites/7/2018/01/Ancient-Egypt_GettyImages-122314779-36897cf.jpg?quality=45&crop=13px,210px,3571px,2379px&resize=620,413">
+                    <img alt="his4" src="history/his4.jpg" style="width:100%">
+                </a>
+
+            </div>
+            <div class="column">
+                <a
+                    href="https://res.cloudinary.com/jerrick/image/upload/d_642250b563292b35f27461a7.png,f_jpg,fl_progressive,q_auto,w_1024/64c03c8d527fad001d2985ab.jpg">
+                    <img alt="his7" src="history/his7.jpg" style="width:100%">
+                </a>
+                <a href="https://futureoflife.org/wp-content/uploads/2015/11/scientists.png">
+                    <img alt="his8" src="history/his8.webp" style="width:100%">
+                </a>
+
+                <a href="https://static.toiimg.com/thumb/msid-91006178,width-1280,height-720,resizemode-4/91006178.jpg">
+                    <img alt="his9" src="history/his9.webp" style="width:100%"></a>
+
+            </div>
+            <div class="column">
+                <a href="https://res.cloudinary.com/jerrick/image/upload/v1693588689/64f21cd1fa1bbb001db59c61.webp">
+                    <img alt="his10" src="history/his10.webp" style="width:100%"></a>
+                <a href="https://defonseka.com/wp-content/uploads/2021/04/kings.jpg">
+                    <img alt="his11" src="history/his11.jpg" style="width:100%"></a>
+
+                <a href="https://srilankatourisminfo.com/wp-content/uploads/2019/07/sri-lankan.jpg">
+                    <img alt="his12" src="history/his12.jpg" style="width:100%"></a>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

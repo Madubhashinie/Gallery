@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+    background-image: url(https://www.ultraimagehub.com/wallpapers/tr:flp-false,gx-0.6,gy-0.5,q-75,rh-3264,rw-5824,th-1080,tw-1920/1242068590149242952.jpeg);
+    background-repeat: unset;
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+    font-size: 4rem;
+    color: #fff;
+    position: relative;
+    margin: 20px 0;
+    font-weight: bold;
+    text-shadow:
+        0 0 5px #ff6b6b,
+        0 0 10px #ff6b6b,
+        0 0 15px #ff6b6b,
+        0 0 20px #ff6b6b,
+        0 0 25px #ff6b6b,
+        0 0 30px #ff6b6b,
+        0 0 35px #ff6b6b;
+}
+
+.Gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.img-container {
+    position: relative;
+    display: inline-block;
+    margin: 20px;
+    width: 400px;
+    height: 400px;
+    
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    border: 10px solid rgb(56, 44, 42);
+    border-radius: 5px;
+    object-fit: cover;
+   
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: rgb(249, 237, 237);
+    padding: 20px;
+    border-radius: 15px;
+    font-size: 24px;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    text-align: center;
+    white-space: normal;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.img-container:hover .overlay {
+    opacity: 1;
+}
+
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    -ms-flex: 25%;
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
